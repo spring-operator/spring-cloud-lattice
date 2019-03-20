@@ -28,8 +28,8 @@ CREATE DATABASE test;
 1. `./mvnw clean package`
 1. `ltc build-droplet sc-lattice-sample java --path=spring-cloud-lattice-sample/target/spring-cloud-lattice-sample-1.0.0.BUILD-SNAPSHOT.jar`
 1. `ltc launch-droplet sc-lattice-sample sc-lattice-sample`
-1. visit [http://spring-cloud-lattice-sample.192.168.11.11.xip.io?service=sc-lattice-sample](http://spring-cloud-lattice-sample.192.168.11.11.xip.io?service=sc-lattice-sample) verify that the 3 services rotate through as you refresh
-1. visit [http://sc-lattice-sample.192.168.11.11.xip.io/me](http://sc-lattice-sample.192.168.11.11.xip.io/me) verify that the 3 services rotate through as you refresh
+1. visit [https://spring-cloud-lattice-sample.192.168.11.11.xip.io?service=sc-lattice-sample](https://spring-cloud-lattice-sample.192.168.11.11.xip.io?service=sc-lattice-sample) verify that the 3 services rotate through as you refresh
+1. visit [https://sc-lattice-sample.192.168.11.11.xip.io/me](https://sc-lattice-sample.192.168.11.11.xip.io/me) verify that the 3 services rotate through as you refresh
 
 ### IDE Discovery
 
@@ -38,7 +38,7 @@ with the following command
 
 `LATTICE_CLI_TIMEOUT=180 ltc create spring-cloud-lattice-sample spencergibb/spring-cloud-lattice-sample -- java -jar /spring-cloud-lattice-sample.jar --spring.cloud.lattice.discovery.routes.myservice.port=8081`
 
-Then call `http://spring-cloud-lattice-sample.192.168.11.11.xip.io/call` and it will hit
+Then call `https://spring-cloud-lattice-sample.192.168.11.11.xip.io/call` and it will hit
 the service running in the ide.
 
 ### Config Server

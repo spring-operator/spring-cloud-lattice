@@ -187,7 +187,7 @@ public class SampleLatticeApplication {
 	@RequestMapping("/call")
 	public String call() {
 		return "myservice says: "
-				+ restTemplate.getForObject("http://myservice/hi", String.class);
+				+ restTemplate.getForObject("https://myservice/hi", String.class);
 	}
 
 	@RequestMapping("/myenv")
